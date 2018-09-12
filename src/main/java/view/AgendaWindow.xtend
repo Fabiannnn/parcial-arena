@@ -120,7 +120,6 @@ class AgendaWindow extends SimpleWindow<AgendaModel> {
 			caption = "EDITAR"
 			onClick[new EditarContactoWindow(this, modelObject.contactoSeleccionado) => [open]]
 			bindEnabledToProperty("habilitarFavorito")
-			ObservableUtils.firePropertyChanged(this, "contactosAgenda")
 		]
 	}
 

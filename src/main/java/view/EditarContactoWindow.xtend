@@ -3,14 +3,13 @@ package view
 import domain.Contacto
 import org.uqbar.arena.aop.windows.TransactionalDialog
 import org.uqbar.arena.layout.ColumnLayout
+import org.uqbar.arena.widgets.Button
 import org.uqbar.arena.widgets.Label
 import org.uqbar.arena.widgets.Panel
 import org.uqbar.arena.widgets.TextBox
 import org.uqbar.arena.windows.WindowOwner
 
 import static extension org.uqbar.arena.xtend.ArenaXtendExtensions.*
-import org.uqbar.arena.widgets.Button
-import org.uqbar.commons.model.utils.ObservableUtils
 
 class EditarContactoWindow extends TransactionalDialog<Contacto> {
 	
@@ -20,10 +19,10 @@ class EditarContactoWindow extends TransactionalDialog<Contacto> {
 
 	override protected createFormPanel(Panel mainPanel) {
 
-		mainPanel.layout = new ColumnLayout(2)
+		//mainPanel.layout = new ColumnLayout(2)
 
 		new Label(mainPanel) => [
-			text = "Agregar Contacto"
+			text = "Editar Contacto"
 			fontSize = 10
 		]
 		new Label(mainPanel)
